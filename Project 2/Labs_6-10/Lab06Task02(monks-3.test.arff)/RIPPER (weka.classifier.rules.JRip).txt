@@ -1,0 +1,56 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.JRip -F 3 -N 2.0 -O 2 -S 1
+Relation:     q2_test
+Instances:    432
+Attributes:   7
+              A1
+              A2
+              A3
+              A4
+              A5
+              A6
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+JRIP rules:
+===========
+
+(A2 = 3) and (A4 = 3) => class=0 (48.0/0.0)
+(A5 = 4) => class=0 (96.0/0.0)
+(A2 = 3) and (A4 = 2) => class=0 (36.0/0.0)
+(A2 = 3) and (A5 = 1) => class=0 (12.0/0.0)
+(A2 = 3) and (A5 = 2) => class=0 (12.0/0.0)
+ => class=1 (228.0/0.0)
+
+Number of Rules : 6
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         426               98.6111 %
+Incorrectly Classified Instances         6                1.3889 %
+Kappa statistic                          0.9722
+Mean absolute error                      0.02
+Root mean squared error                  0.112
+Relative absolute error                  4.0105 %
+Root relative squared error             22.4267 %
+Total Number of Instances              432
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.026    0.971      1.000    0.986      0.973    0.997     0.996     0
+                 0.974    0.000    1.000      0.974    0.987      0.973    0.997     0.997     1
+Weighted Avg.    0.986    0.012    0.987      0.986    0.986      0.973    0.997     0.996
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 204   0 |   a = 0
+   6 222 |   b = 1

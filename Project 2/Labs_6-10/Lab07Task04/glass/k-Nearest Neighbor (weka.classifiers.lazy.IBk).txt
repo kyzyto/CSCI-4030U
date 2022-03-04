@@ -1,0 +1,60 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.IBk -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     credit-card-application-approval
+Instances:    214
+Attributes:   10
+              A1
+              A2
+              A3
+              A4
+              A5
+              A6
+              A7
+              A8
+              A9
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 1 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         151               70.5607 %
+Incorrectly Classified Instances        63               29.4393 %
+Kappa statistic                          0.6017
+Mean absolute error                      0.0897
+Root mean squared error                  0.2852
+Relative absolute error                 42.3765 %
+Root relative squared error             87.8768 %
+Total Number of Instances              214
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.771    0.139    0.730      0.771    0.750      0.624    0.823     0.660     1
+                 0.671    0.145    0.718      0.671    0.694      0.535    0.749     0.605     2
+                 0.353    0.061    0.333      0.353    0.343      0.285    0.670     0.182     3
+                 ?        0.000    ?          ?        ?          ?        ?         ?         4
+                 0.769    0.030    0.625      0.769    0.690      0.671    0.824     0.483     5
+                 0.667    0.010    0.750      0.667    0.706      0.695    0.819     0.518     6
+                 0.828    0.016    0.889      0.828    0.857      0.836    0.903     0.736     7
+Weighted Avg.    0.706    0.106    0.710      0.706    0.707      0.600    0.795     0.596
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f  g   <-- classified as
+ 54  9  7  0  0  0  0 |  a = 1
+ 14 51  5  0  4  1  1 |  b = 2
+  6  5  6  0  0  0  0 |  c = 3
+  0  0  0  0  0  0  0 |  d = 4
+  0  2  0  0 10  0  1 |  e = 5
+  0  1  0  0  1  6  1 |  f = 6
+  0  3  0  0  1  1 24 |  g = 7

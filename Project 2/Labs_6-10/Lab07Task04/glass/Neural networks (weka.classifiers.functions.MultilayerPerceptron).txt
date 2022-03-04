@@ -1,0 +1,252 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+Relation:     credit-card-application-approval
+Instances:    214
+Attributes:   10
+              A1
+              A2
+              A3
+              A4
+              A5
+              A6
+              A7
+              A8
+              A9
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -7.526546920265307
+    Node 7    -2.611783767482185
+    Node 8    1.1204327525838216
+    Node 9    5.972934574598503
+    Node 10    1.9964336150759592
+    Node 11    6.142103014884129
+    Node 12    -3.6280432179124524
+    Node 13    0.84252590688827
+    Node 14    -7.829527515865885
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -0.1901796640646589
+    Node 7    5.264568955600204
+    Node 8    2.5208381097329515
+    Node 9    -6.566685829105966
+    Node 10    -7.073636150774856
+    Node 11    -2.8670381985794333
+    Node 12    -9.453380846455454
+    Node 13    -0.08465736448169732
+    Node 14    11.725337811789855
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    1.722010257616533
+    Node 7    -3.5022215607842497
+    Node 8    -4.331505847232453
+    Node 9    -1.79284368552049
+    Node 10    -4.354245671358862
+    Node 11    2.1113161841731345
+    Node 12    -2.2612967552068217
+    Node 13    -2.08562668031015
+    Node 14    -4.796018314131141
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -2.975571086578037
+    Node 7    -1.090802807546552
+    Node 8    -1.394296226482708
+    Node 9    -1.1024761147318263
+    Node 10    -1.071873994043819
+    Node 11    -1.330913903968772
+    Node 12    -1.133101211791075
+    Node 13    -1.1580497446662477
+    Node 14    -0.9314625280537324
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -4.959789766910005
+    Node 7    -1.2205605435608748
+    Node 8    4.107003802965063
+    Node 9    -0.09792599796239411
+    Node 10    -3.7453500550763406
+    Node 11    -6.098916324122927
+    Node 12    6.705225947870961
+    Node 13    -8.477759339998928
+    Node 14    0.468443291261283
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    2.5262298273817434
+    Node 7    -9.482755904618903
+    Node 8    -6.2865522643061915
+    Node 9    2.1834735404975465
+    Node 10    4.359946805300542
+    Node 11    -2.4867718863627943
+    Node 12    -0.6706310728197672
+    Node 13    -4.582367729779263
+    Node 14    -6.811803284067009
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -8.112072496057285
+    Node 7    6.220037538577714
+    Node 8    -7.460946873854693
+    Node 9    0.06746222411190968
+    Node 10    6.313127344389754
+    Node 11    -3.1141786841514816
+    Node 12    1.1179653570491404
+    Node 13    -2.2038459286470586
+    Node 14    -1.010328252778575
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    2.055978560285774
+    Attrib A1    1.6715780252279775
+    Attrib A2    5.778501444256323
+    Attrib A3    4.618987980890744
+    Attrib A4    6.130090813472873
+    Attrib A5    -2.751595279409533
+    Attrib A6    -6.009353178189578
+    Attrib A7    -11.989989125912217
+    Attrib A8    12.295338656283574
+    Attrib A9    -1.4443434221595022
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    2.1735378532734186
+    Attrib A1    5.215156366456609
+    Attrib A2    -11.21901193633607
+    Attrib A3    2.6032599424680387
+    Attrib A4    5.549813006286019
+    Attrib A5    2.581147939830448
+    Attrib A6    1.9462174057298578
+    Attrib A7    -1.9368326465466725
+    Attrib A8    -0.7764971948818791
+    Attrib A9    1.2045707605368494
+Sigmoid Node 9
+    Inputs    Weights
+    Threshold    -3.0927780868847186
+    Attrib A1    10.902476244989936
+    Attrib A2    7.504990482924944
+    Attrib A3    -2.281235304998364
+    Attrib A4    -7.348705393223159
+    Attrib A5    4.442204494542886
+    Attrib A6    -1.1011926160968049
+    Attrib A7    7.998569100038893
+    Attrib A8    -1.3579901030718524
+    Attrib A9    -7.521052185482805
+Sigmoid Node 10
+    Inputs    Weights
+    Threshold    -1.560633632287097
+    Attrib A1    -0.30559953332718814
+    Attrib A2    8.841183562432287
+    Attrib A3    -2.5024545851968947
+    Attrib A4    0.9261617554253103
+    Attrib A5    -0.24307507152677327
+    Attrib A6    -2.6458697341135307
+    Attrib A7    -2.500749203402309
+    Attrib A8    7.6486907899883425
+    Attrib A9    -4.933057890765015
+Sigmoid Node 11
+    Inputs    Weights
+    Threshold    3.914263611318438
+    Attrib A1    7.00404958787602
+    Attrib A2    -2.732450510580233
+    Attrib A3    8.745466189986852
+    Attrib A4    -8.954112760345255
+    Attrib A5    -2.3626047202660567
+    Attrib A6    1.5540948287589156
+    Attrib A7    0.2046095788281031
+    Attrib A8    -1.9578532798973445
+    Attrib A9    8.246042499660774
+Sigmoid Node 12
+    Inputs    Weights
+    Threshold    1.4975205075259501
+    Attrib A1    -3.3977198383641354
+    Attrib A2    -8.002712652127476
+    Attrib A3    -7.906792790360656
+    Attrib A4    15.019737900130165
+    Attrib A5    0.37087129731811824
+    Attrib A6    1.3525898049352347
+    Attrib A7    0.25124954499674373
+    Attrib A8    3.3428406804668453
+    Attrib A9    0.39874330389322615
+Sigmoid Node 13
+    Inputs    Weights
+    Threshold    -1.462424830887892
+    Attrib A1    0.7777209787696293
+    Attrib A2    -2.8691711751020814
+    Attrib A3    3.631566233052517
+    Attrib A4    -7.529694755344716
+    Attrib A5    6.791955213122096
+    Attrib A6    5.023118571495966
+    Attrib A7    0.4121164098864558
+    Attrib A8    -1.2439298722580137
+    Attrib A9    1.6000654651173887
+Sigmoid Node 14
+    Inputs    Weights
+    Threshold    -1.1258440087791013
+    Attrib A1    -0.44893272522516886
+    Attrib A2    -2.5742029318687587
+    Attrib A3    -5.992737929855757
+    Attrib A4    -5.808432278348921
+    Attrib A5    -3.723169702309486
+    Attrib A6    0.16007218056014014
+    Attrib A7    6.888871131536639
+    Attrib A8    -0.03297803152279626
+    Attrib A9    0.4258588876445922
+Class 1
+    Input
+    Node 0
+Class 2
+    Input
+    Node 1
+Class 3
+    Input
+    Node 2
+Class 4
+    Input
+    Node 3
+Class 5
+    Input
+    Node 4
+Class 6
+    Input
+    Node 5
+Class 7
+    Input
+    Node 6
+
+
+Time taken to build model: 0.22 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         148               69.1589 %
+Incorrectly Classified Instances        66               30.8411 %
+Kappa statistic                          0.5677
+Mean absolute error                      0.1067
+Root mean squared error                  0.2471
+Relative absolute error                 50.3806 %
+Root relative squared error             76.124  %
+Total Number of Instances              214
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.814    0.229    0.633      0.814    0.713      0.556    0.881     0.747     1
+                 0.697    0.174    0.688      0.697    0.693      0.522    0.856     0.758     2
+                 0.059    0.005    0.500      0.059    0.105      0.151    0.732     0.192     3
+                 ?        0.000    ?          ?        ?          ?        ?         ?         4
+                 0.692    0.020    0.692      0.692    0.692      0.672    0.981     0.843     5
+                 0.556    0.015    0.625      0.556    0.588      0.572    0.933     0.613     6
+                 0.793    0.005    0.958      0.793    0.868      0.854    0.908     0.801     7
+Weighted Avg.    0.692    0.140    0.690      0.692    0.672      0.560    0.872     0.715
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f  g   <-- classified as
+ 57 12  1  0  0  0  0 |  a = 1
+ 20 53  0  0  1  2  0 |  b = 2
+ 10  6  1  0  0  0  0 |  c = 3
+  0  0  0  0  0  0  0 |  d = 4
+  0  3  0  0  9  0  1 |  e = 5
+  2  1  0  0  1  5  0 |  f = 6
+  1  2  0  0  2  1 23 |  g = 7

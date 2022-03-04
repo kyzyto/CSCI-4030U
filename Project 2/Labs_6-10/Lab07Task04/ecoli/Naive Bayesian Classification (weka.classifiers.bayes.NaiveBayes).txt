@@ -1,0 +1,106 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayes
+Relation:     credit-card-application-approval
+Instances:    336
+Attributes:   8
+              A1
+              A2
+              A3
+              A4
+              A5
+              A6
+              A7
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+                 Class
+Attribute           cp      im      pp     imU      om     omL     imL     imS
+                (0.42)  (0.23)  (0.15)   (0.1)  (0.06)  (0.02)  (0.01)  (0.01)
+===============================================================================
+A1
+  mean           0.3632  0.4791  0.6528  0.7255  0.6727  0.6981  0.7282  0.7455
+  std. dev.      0.1229  0.1938  0.0896  0.1065  0.0676  0.0411  0.0231  0.1098
+  weight sum        143      77      52      35      20       5       2       2
+  precision      0.0116  0.0116  0.0116  0.0116  0.0116  0.0116  0.0116  0.0116
+
+A2
+  mean           0.4101  0.4974  0.7001  0.4575  0.7093  0.5121  0.4742  0.5081
+  std. dev.      0.0894  0.0876  0.1275  0.0913  0.1166  0.0423  0.0813  0.0203
+  weight sum        143      77      52      35      20       5       2       2
+  precision      0.0135  0.0135  0.0135  0.0135  0.0135  0.0135  0.0135  0.0135
+
+A3
+  mean             0.52  0.5268    0.52  0.5349   0.546    1.04    1.04    0.52
+  std. dev.      0.0867  0.0867  0.0867  0.0867  0.1133  0.0867  0.0867  0.0867
+  weight sum        143      77      52      35      20       5       2       2
+  precision        0.52    0.52    0.52    0.52    0.52    0.52    0.52    0.52
+
+A4
+  mean              0.5     0.5     0.5     0.5     0.5     0.5    0.75     0.5
+  std. dev.      0.0833  0.0833  0.0833  0.0833  0.0833  0.0833    0.25  0.0833
+  weight sum        143      77      52      35      20       5       2       2
+  precision         0.5     0.5     0.5     0.5     0.5     0.5     0.5     0.5
+
+A5
+  mean           0.4549  0.5377  0.4356  0.5605  0.7404  0.5432  0.4552  0.5386
+  std. dev.      0.0884  0.1141  0.0863  0.1125  0.0905  0.1044  0.0607  0.0076
+  weight sum        143      77      52      35      20       5       2       2
+  precision      0.0152  0.0152  0.0152  0.0152  0.0152  0.0152  0.0152  0.0152
+
+A6
+  mean           0.3127  0.7565  0.4686  0.7432  0.4628  0.5628  0.6407  0.6347
+  std. dev.      0.0989  0.1029  0.0997  0.0838  0.0822  0.0169  0.1736  0.1198
+  weight sum        143      77      52      35      20       5       2       2
+  precision       0.012   0.012   0.012   0.012   0.012   0.012   0.012   0.012
+
+A7
+  mean           0.3946   0.731   0.374  0.7488  0.3042  0.2214  0.5666  0.5732
+  std. dev.      0.0956  0.1656  0.1169   0.095  0.0823  0.1241   0.267  0.2214
+  weight sum        143      77      52      35      20       5       2       2
+  precision       0.013   0.013   0.013   0.013   0.013   0.013   0.013   0.013
+
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         287               85.4167 %
+Incorrectly Classified Instances        49               14.5833 %
+Kappa statistic                          0.8002
+Mean absolute error                      0.0429
+Root mean squared error                  0.1639
+Relative absolute error                 23.461  %
+Root relative squared error             54.3314 %
+Total Number of Instances              336
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.958    0.041    0.945      0.958    0.951      0.915    0.986     0.973     cp
+                 0.727    0.031    0.875      0.727    0.794      0.745    0.966     0.904     im
+                 0.846    0.032    0.830      0.846    0.838      0.808    0.945     0.901     pp
+                 0.829    0.060    0.617      0.829    0.707      0.677    0.937     0.630     imU
+                 0.900    0.009    0.857      0.900    0.878      0.870    0.996     0.964     om
+                 0.600    0.000    1.000      0.600    0.750      0.772    0.996     0.883     omL
+                 0.000    0.006    0.000      0.000    0.000      -0.006   0.060     0.006     imL
+                 0.000    0.003    0.000      0.000    0.000      -0.004   0.148     0.005     imS
+Weighted Avg.    0.854    0.036    0.861      0.854    0.854      0.819    0.960     0.897
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   g   h   <-- classified as
+ 137   2   4   0   0   0   0   0 |   a = cp
+   3  56   1  16   0   0   0   1 |   b = im
+   4   1  44   0   3   0   0   0 |   c = pp
+   1   5   0  29   0   0   0   0 |   d = imU
+   0   0   2   0  18   0   0   0 |   e = om
+   0   0   0   0   0   3   2   0 |   f = omL
+   0   0   1   1   0   0   0   0 |   g = imL
+   0   0   1   1   0   0   0   0 |   h = imS

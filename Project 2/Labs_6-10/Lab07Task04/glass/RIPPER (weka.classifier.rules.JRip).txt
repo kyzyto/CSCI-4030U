@@ -1,0 +1,72 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.JRip -F 3 -N 2.0 -O 2 -S 1
+Relation:     credit-card-application-approval
+Instances:    214
+Attributes:   10
+              A1
+              A2
+              A3
+              A4
+              A5
+              A6
+              A7
+              A8
+              A9
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+JRIP rules:
+===========
+
+(A6 <= 0) and (A8 <= 0) and (A1 <= 1.51969) => class=6 (10.0/1.0)
+(A3 <= 2.68) and (A2 <= 13.38) and (A1 <= 1.52171) => class=5 (12.0/1.0)
+(A5 <= 72.7) and (A1 <= 1.51832) and (A7 >= 8.33) => class=3 (11.0/3.0)
+(A4 <= 0.91) and (A1 <= 1.52127) => class=3 (6.0/2.0)
+(A8 >= 0.4) => class=7 (28.0/3.0)
+(A1 >= 1.52247) and (A7 <= 9.76) => class=7 (2.0/0.0)
+(A1 >= 1.5172) and (A1 <= 1.51797) => class=1 (37.0/3.0)
+(A1 >= 1.51898) and (A3 >= 3.33) => class=1 (25.0/2.0)
+ => class=2 (83.0/14.0)
+
+Number of Rules : 9
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         149               69.6262 %
+Incorrectly Classified Instances        65               30.3738 %
+Kappa statistic                          0.5741
+Mean absolute error                      0.1139
+Root mean squared error                  0.2657
+Relative absolute error                 53.8052 %
+Root relative squared error             81.8743 %
+Total Number of Instances              214
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.714    0.167    0.676      0.714    0.694      0.540    0.816     0.655     1
+                 0.789    0.225    0.659      0.789    0.719      0.547    0.818     0.649     2
+                 0.118    0.010    0.500      0.118    0.190      0.215    0.655     0.182     3
+                 ?        0.000    ?          ?        ?          ?        ?         ?         4
+                 0.615    0.015    0.727      0.615    0.667      0.650    0.803     0.475     5
+                 0.556    0.015    0.625      0.556    0.588      0.572    0.805     0.387     6
+                 0.828    0.011    0.923      0.828    0.873      0.856    0.906     0.797     7
+Weighted Avg.    0.696    0.138    0.690      0.696    0.681      0.567    0.815     0.613
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f  g   <-- classified as
+ 50 17  1  0  0  1  1 |  a = 1
+ 14 60  1  0  0  1  0 |  b = 2
+  9  5  2  0  0  1  0 |  c = 3
+  0  0  0  0  0  0  0 |  d = 4
+  0  4  0  0  8  0  1 |  e = 5
+  0  4  0  0  0  5  0 |  f = 6
+  1  1  0  0  3  0 24 |  g = 7
