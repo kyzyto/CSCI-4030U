@@ -1,0 +1,217 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+Relation:     q2
+Instances:    122
+Attributes:   7
+              A1
+              A2
+              A3
+              A4
+              A5
+              A6
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    1.5557019117258477
+    Node 2    -3.1098034067595193
+    Node 3    -3.150347601632046
+    Node 4    3.3293921362685124
+    Node 5    -3.3901024133737185
+    Node 6    -0.3275956839365254
+    Node 7    -2.9030263231083056
+    Node 8    2.5647409620282606
+    Node 9    4.897214329068841
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -1.5373673471955023
+    Node 2    3.098655673023159
+    Node 3    3.1234095639334716
+    Node 4    -3.32988043454332
+    Node 5    3.3968689391147238
+    Node 6    0.3759487662537431
+    Node 7    2.8811099118480357
+    Node 8    -2.588853061393981
+    Node 9    -4.921642077336757
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -0.5358309999419928
+    Attrib A1=1    -0.7798535435067071
+    Attrib A1=2    0.2980520448824481
+    Attrib A1=3    1.0313465723298505
+    Attrib A2=1    0.28768460728320133
+    Attrib A2=2    2.2682804573648587
+    Attrib A2=3    -2.1214400362404446
+    Attrib A3=2    1.0620329909812314
+    Attrib A4=1    0.21966665611312705
+    Attrib A4=2    -1.226118668234017
+    Attrib A4=3    1.4758788545902868
+    Attrib A5=1    1.0670419291314923
+    Attrib A5=2    0.015333662722418004
+    Attrib A5=3    1.4443003988618879
+    Attrib A5=4    -1.4637878599732166
+    Attrib A6=2    1.0575489735949966
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -0.4332313631300125
+    Attrib A1=1    -0.1650512450669303
+    Attrib A1=2    -0.4321483080688285
+    Attrib A1=3    1.0826422472906831
+    Attrib A2=1    1.9715008523349673
+    Attrib A2=2    0.8576937488925515
+    Attrib A2=3    -2.3468724322931953
+    Attrib A3=2    1.3594782762863575
+    Attrib A4=1    -0.7625342057027171
+    Attrib A4=2    0.526975334753335
+    Attrib A4=3    0.6693113543881812
+    Attrib A5=1    1.7708646563228103
+    Attrib A5=2    1.047745196288274
+    Attrib A5=3    0.161295388111765
+    Attrib A5=4    -2.036721715732444
+    Attrib A6=2    0.8242893822646822
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    0.41413160515059916
+    Attrib A1=1    -0.7800323572057473
+    Attrib A1=2    0.6031899238598234
+    Attrib A1=3    -0.25933556217260006
+    Attrib A2=1    -2.3110681695111737
+    Attrib A2=2    -0.4655053138695305
+    Attrib A2=3    2.3816148341675323
+    Attrib A3=2    0.1236713334384726
+    Attrib A4=1    -1.2341205812510188
+    Attrib A4=2    1.1212972014410736
+    Attrib A4=3    -0.3952748563904365
+    Attrib A5=1    -1.5235665903836562
+    Attrib A5=2    -1.5417548370978063
+    Attrib A5=3    -0.24066756067994888
+    Attrib A5=4    2.474100203982534
+    Attrib A6=2    -0.16639041268382923
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -0.44559879953150167
+    Attrib A1=1    -0.8187674490407812
+    Attrib A1=2    0.42667426412795834
+    Attrib A1=3    0.761483602057448
+    Attrib A2=1    0.7224296791746231
+    Attrib A2=2    2.0842080746221296
+    Attrib A2=3    -2.448674963127386
+    Attrib A3=2    0.6410204752247369
+    Attrib A4=1    1.0726276229139957
+    Attrib A4=2    0.40894353072828704
+    Attrib A4=3    -1.0177455889496285
+    Attrib A5=1    1.4544160559526655
+    Attrib A5=2    2.1772623484601326
+    Attrib A5=3    -0.9274797624714054
+    Attrib A5=4    -1.91511008739813
+    Attrib A6=2    -0.377349205443922
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -0.19677008024103088
+    Attrib A1=1    -0.22648772836194692
+    Attrib A1=2    0.12259297841259684
+    Attrib A1=3    0.19880273900846077
+    Attrib A2=1    0.15665315936300753
+    Attrib A2=2    0.3625227989666228
+    Attrib A2=3    -0.2766472240196168
+    Attrib A3=2    0.15589700546101662
+    Attrib A4=1    -0.04001094980663737
+    Attrib A4=2    -0.020277460800890393
+    Attrib A4=3    0.3464792526689939
+    Attrib A5=1    0.3997769207500416
+    Attrib A5=2    0.2163401684558033
+    Attrib A5=3    0.03632078771171465
+    Attrib A5=4    -0.2785970327182197
+    Attrib A6=2    0.2741400122570211
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    -0.43962172735070426
+    Attrib A1=1    0.20387305568024794
+    Attrib A1=2    -0.7774861872789653
+    Attrib A1=3    1.0460625703664927
+    Attrib A2=1    0.49842116618797494
+    Attrib A2=2    2.0739076909969802
+    Attrib A2=3    -2.1711437288768183
+    Attrib A3=2    1.4606015468479665
+    Attrib A4=1    0.7754864939104463
+    Attrib A4=2    -0.38661332370609713
+    Attrib A4=3    -0.02000366169104838
+    Attrib A5=1    1.993968089597534
+    Attrib A5=2    1.142710111931049
+    Attrib A5=3    -0.16133554546418077
+    Attrib A5=4    -1.9815928922338746
+    Attrib A6=2    0.46970941678832745
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    -0.12551797555829586
+    Attrib A1=1    0.6531771992901776
+    Attrib A1=2    -0.33431964642360057
+    Attrib A1=3    -0.1425035917172684
+    Attrib A2=1    -0.1930388767015085
+    Attrib A2=2    -1.201800083030148
+    Attrib A2=3    1.5092435561743174
+    Attrib A3=2    -0.18490542502781487
+    Attrib A4=1    0.33311900125922167
+    Attrib A4=2    0.4049519464865145
+    Attrib A4=3    -0.5672197498047197
+    Attrib A5=1    -0.7033324867645256
+    Attrib A5=2    -0.9403793620023402
+    Attrib A5=3    0.3055723879238867
+    Attrib A5=4    1.6323835146729182
+    Attrib A6=2    -0.45863607768717074
+Sigmoid Node 9
+    Inputs    Weights
+    Threshold    0.21749668287598112
+    Attrib A1=1    -1.4310024368936893
+    Attrib A1=2    1.2655928363724291
+    Attrib A1=3    0.023616405359572906
+    Attrib A2=1    -3.2458953170621103
+    Attrib A2=2    -0.5153399706132066
+    Attrib A2=3    3.50304305581348
+    Attrib A3=2    -1.0054543547149815
+    Attrib A4=1    -0.909705581666452
+    Attrib A4=2    -0.34256005165383646
+    Attrib A4=3    0.9864656990709341
+    Attrib A5=1    -1.6550850610192946
+    Attrib A5=2    -0.25214245965513576
+    Attrib A5=3    -1.9064760146510291
+    Attrib A5=4    3.2890963993455964
+    Attrib A6=2    0.08560624429443804
+Class 0
+    Input
+    Node 0
+Class 1
+    Input
+    Node 1
+
+
+Time taken to build model: 0.12 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         107               87.7049 %
+Incorrectly Classified Instances        15               12.2951 %
+Kappa statistic                          0.7537
+Mean absolute error                      0.1271
+Root mean squared error                  0.3224
+Relative absolute error                 25.4232 %
+Root relative squared error             64.4867 %
+Total Number of Instances              122
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.919    0.167    0.851      0.919    0.884      0.756    0.912     0.859     0
+                 0.833    0.081    0.909      0.833    0.870      0.756    0.912     0.909     1
+Weighted Avg.    0.877    0.124    0.879      0.877    0.877      0.756    0.912     0.883
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 57  5 |  a = 0
+ 10 50 |  b = 1

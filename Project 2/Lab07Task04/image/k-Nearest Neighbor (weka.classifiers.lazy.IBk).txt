@@ -1,0 +1,72 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.IBk -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     credit-card-application-approval
+Instances:    210
+Attributes:   20
+              A1
+              A2
+              A3
+              A4
+              A5
+              A6
+              A7
+              A8
+              A9
+              A10
+              A11
+              A12
+              A13
+              A14
+              A15
+              A16
+              A17
+              A18
+              A19
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 1 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         183               87.1429 %
+Incorrectly Classified Instances        27               12.8571 %
+Kappa statistic                          0.85
+Mean absolute error                      0.0397
+Root mean squared error                  0.1761
+Relative absolute error                 18.5207 %
+Root relative squared error             53.8043 %
+Total Number of Instances              210
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.933    0.022    0.875      0.933    0.903      0.887    0.956     0.826     BRICKFACE
+                 ?        0.000    ?          ?        ?          ?        ?         ?         FLY
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     SKY
+                 0.800    0.028    0.828      0.800    0.814      0.783    0.886     0.691     FOLIAGE
+                 0.733    0.033    0.786      0.733    0.759      0.721    0.850     0.614     CEMENT
+                 0.633    0.056    0.655      0.633    0.644      0.586    0.789     0.467     WINDOW
+                 1.000    0.011    0.938      1.000    0.968      0.963    0.994     0.938     PATH
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     GRASS
+Weighted Avg.    0.871    0.021    0.869      0.871    0.870      0.849    0.925     0.791
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f  g  h   <-- classified as
+ 28  0  0  0  1  1  0  0 |  a = BRICKFACE
+  0  0  0  0  0  0  0  0 |  b = FLY
+  0  0 30  0  0  0  0  0 |  c = SKY
+  0  0  0 24  1  5  0  0 |  d = FOLIAGE
+  2  0  0  0 22  4  2  0 |  e = CEMENT
+  2  0  0  5  4 19  0  0 |  f = WINDOW
+  0  0  0  0  0  0 30  0 |  g = PATH
+  0  0  0  0  0  0  0 30 |  h = GRASS

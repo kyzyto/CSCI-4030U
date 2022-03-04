@@ -1,0 +1,101 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     credit-card-application-approval
+Instances:    210
+Attributes:   20
+              A1
+              A2
+              A3
+              A4
+              A5
+              A6
+              A7
+              A8
+              A9
+              A10
+              A11
+              A12
+              A13
+              A14
+              A15
+              A16
+              A17
+              A18
+              A19
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+A2 <= 160
+|   A13 <= 64.55556
+|   |   A17 <= 39.666668
+|   |   |   A19 <= -1.802554
+|   |   |   |   A2 <= 145
+|   |   |   |   |   A19 <= -2.094303
+|   |   |   |   |   |   A16 <= -7.444445
+|   |   |   |   |   |   |   A2 <= 116: WINDOW (8.0)
+|   |   |   |   |   |   |   A2 > 116: FOLIAGE (3.0/1.0)
+|   |   |   |   |   |   A16 > -7.444445: FOLIAGE (25.0/1.0)
+|   |   |   |   |   A19 > -2.094303: WINDOW (13.0)
+|   |   |   |   A2 > 145
+|   |   |   |   |   A10 <= 7.777778: WINDOW (3.0/1.0)
+|   |   |   |   |   A10 > 7.777778: CEMENT (4.0)
+|   |   |   A19 > -1.802554
+|   |   |   |   A19 <= -0.57094: BRICKFACE (31.0/2.0)
+|   |   |   |   A19 > -0.57094: WINDOW (6.0/1.0)
+|   |   A17 > 39.666668
+|   |   |   A8 <= 26.444445: CEMENT (25.0)
+|   |   |   A8 > 26.444445: FOLIAGE (3.0)
+|   A13 > 64.55556: SKY (30.0)
+A2 > 160
+|   A11 <= 21.666666: GRASS (29.0)
+|   A11 > 21.666666: PATH (30.0)
+
+Number of Leaves  : 	13
+
+Size of the tree : 	25
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         187               89.0476 %
+Incorrectly Classified Instances        23               10.9524 %
+Kappa statistic                          0.8722
+Mean absolute error                      0.0333
+Root mean squared error                  0.1652
+Relative absolute error                 15.5312 %
+Root relative squared error             50.4698 %
+Total Number of Instances              210
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.933    0.028    0.848      0.933    0.889      0.871    0.948     0.751     BRICKFACE
+                 ?        0.000    ?          ?        ?          ?        ?         ?         FLY
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     SKY
+                 0.867    0.022    0.867      0.867    0.867      0.844    0.905     0.710     FOLIAGE
+                 0.767    0.022    0.852      0.767    0.807      0.778    0.898     0.745     CEMENT
+                 0.767    0.028    0.821      0.767    0.793      0.761    0.888     0.703     WINDOW
+                 0.967    0.011    0.935      0.967    0.951      0.943    0.978     0.909     PATH
+                 0.933    0.017    0.903      0.933    0.918      0.904    0.959     0.871     GRASS
+Weighted Avg.    0.890    0.018    0.890      0.890    0.889      0.872    0.939     0.813
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f  g  h   <-- classified as
+ 28  0  0  0  0  2  0  0 |  a = BRICKFACE
+  0  0  0  0  0  0  0  0 |  b = FLY
+  0  0 30  0  0  0  0  0 |  c = SKY
+  1  0  0 26  2  1  0  0 |  d = FOLIAGE
+  1  0  0  1 23  2  1  2 |  e = CEMENT
+  2  0  0  3  2 23  0  0 |  f = WINDOW
+  0  0  0  0  0  0 29  1 |  g = PATH
+  1  0  0  0  0  0  1 28 |  h = GRASS
